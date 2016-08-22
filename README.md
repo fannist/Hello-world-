@@ -1,2 +1,2 @@
-# Hello-world
-print "hello world!"
+# Learning python documents
+# Basic syntax
