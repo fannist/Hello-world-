@@ -9,6 +9,7 @@ def add_number(a=0,b=0):
     return c
 print (add_number())
 
+#assignment parameters
 def max(a=1,b=6):
     if a>b:
         return a
@@ -16,3 +17,13 @@ def max(a=1,b=6):
         return b
 val1 = max(9) #result is 9
 val2 = max(b=0) #result is 1 
+
+#multi result
+def is_passed(a,b):
+    '''explain something
+    '''                       #for explaining, no influence on the function
+    base_score = 60           #local variable, only valid in this function
+    a_passed = a > base_score
+    b_passed = b > base_score
+    return a_passed, b_passed #multi result
+a_ok, b_ok = is passed(a,b)   #assignment the result to multi variable.
