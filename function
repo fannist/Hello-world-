@@ -1,5 +1,18 @@
 def add_number(a,b):
     c = a + b
     return c
+print (add_number(1,2)) #result is 3
 
-add_number(1,2) #result is 3
+#default parameters
+def add_number(a=0,b=0):
+    c = a + b
+    return c
+print (add_number())
+
+def max(a=1,b=6):
+    if a>b:
+        return a
+    else:
+        return b
+val1 = max(9) #result is 9
+val2 = max(b=0) #result is 1 
