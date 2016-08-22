@@ -1,0 +1,6 @@
+a = [1, 2, 3, 4]
+for item in a:
+    if a == 2 or if a == 3:
+        continue
+    if a == 3:
+        break
