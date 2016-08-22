@@ -1,0 +1,5 @@
+def add_number(a,b):
+    c = a + b
+    return c
+
+add_number(1,2) #result is 3
