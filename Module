@@ -1,0 +1,17 @@
+Main.py
+from lib.parse import do_parse 
+#the module from the same folder with entrance module (a folder with several python documents and a _init_py document/ other documents)
+#when imported, the moodule will be excuted once. Won't be executed when imported the second time. 
+
+parse.py
+from .input import get_input
+#the documents from the same folder
+
+from ..input import get_input
+#the documents from higher folder
+
+input.py
+
+dir(module)   #looking up the variable. 
+__name__      #default variable
+if __name__ == __main__   #true when the module is in the entrance module 
