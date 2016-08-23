@@ -1,0 +1,20 @@
+Poem = 'Programming is fun when work is done if you wanna make your work also fun: use Python!'
+f = file('poem.txt','w')
+#file can be replaced by open
+#'w':writing, 'r':reading, 'a': appending
+f.write(poem) #write text to file
+f.close() #close the file
+
+
+f = file('poem.txt')
+#if no mode is specified, reading mode is assumed by default
+while true:
+    line = f.readline()
+    if len(line) == 0:
+        break
+    print (line, end = '')
+    #to avoid automatic newline added by python
+f.close()
+
+with open('poem.txt', 'w') as f:
+    f.write(poem)
