@@ -1,0 +1,4 @@
+a = (1, 2) #tuple 
+#tuple cannot be changed
+(2) == 2
+(2,) #tuple
