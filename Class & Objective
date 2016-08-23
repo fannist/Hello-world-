@@ -1,0 +1,23 @@
+class Cat():
+    leg_cnt = 4
+    def __init__(self, cat_name):
+        self.name = cat_name
+    def change_name(self, cat_name):
+        self.name = cat_name
+    def climb(self):
+        print("cat %s climb a tree" % self.name)
+        
+tom = Cat("Tom")
+tom.change_name("Little_Tom")
+tom.climb()
+tom.leg_cnt == 4 #true
+
+class PersianCat(Cat):
+    def __init__(self, cat_name):
+        super().__init__(cat_name)
+    def jump(self):
+        print ("try jump")
+        
+jack = PersianCat("jack")
+jack.jump()
+jack.climb()
