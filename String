@@ -1,0 +1,10 @@
+a = "hello lilei"
+a = "hello %s" % "lilei"
+a = "%S %S" % ("hello", "lilei")
+a = "%(verb)s %(name)s" % {"verb": "hello", "name": "lilei"}
+
+param = (1,2)
+add(*param) == add(1,2)
+
+param = {"a":1, "b":2}
+add(**param) == param(a=1, b=2)
